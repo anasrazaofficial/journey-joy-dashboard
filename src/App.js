@@ -11,7 +11,7 @@ function App() {
       <Sidebar />
       <Navbar />
 
-      <div className="main-container">
+      <div className="pt-[51px] pr-[86px] pb-[78px] pl-[342px] bg-[#F7F7F7]">
         <Router>
           <Routes>
             <Route path="/" element={<Dashboard />} />
