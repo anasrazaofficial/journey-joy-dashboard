@@ -11,11 +11,13 @@ function App() {
       <Sidebar />
       <Navbar />
 
-      <Router>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-        </Routes>
-      </Router>
+      <div className="main-container">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+          </Routes>
+        </Router>
+      </div>
     </>
   );
 }
