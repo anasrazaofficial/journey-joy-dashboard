@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import { Dashboard, PassengerManagment, RegionManagement } from "./Pages";
+import { CollegesAndUniversities, Dashboard, PassengerManagment, RegionManagement } from "./Pages";
 import { Navbar, Sidebar } from "./components";
 
 
@@ -17,6 +17,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/passenger-managment" element={<PassengerManagment />} />
             <Route path="/region-management" element={<RegionManagement />} />
+            <Route path="/colleges-and-universities" element={<CollegesAndUniversities />} />
           </Routes>
         </Router>
       </main>
