@@ -1,4 +1,6 @@
-import { avatarTable, chevron, search } from "../assets";
+import { Pagination } from "../components";
+import { avatarTable, search } from "../assets";
+
 
 export const PassengerManagment = () => {
     return (
@@ -71,10 +73,10 @@ export const PassengerManagment = () => {
                         </td>
                         <td>mohammed.a@example.com</td>
                         <td>0501112233</td>
-                        <td><span className="table-col-tag bg-[#E0E7FF]">MALE</span></td>
+                        <td><span className="table-tag bg-[#E0E7FF]">MALE</span></td>
                         <td>King Fahd Uni</td>
                         <td>Riyadh</td>
-                        <td><span className="table-col-tag bg-[#F0F0F0]">ANY</span></td>
+                        <td><span className="table-tag bg-[#F0F0F0]">ANY</span></td>
                         <td>7/12/2025</td>
                     </tr>
 
@@ -128,31 +130,7 @@ export const PassengerManagment = () => {
 
 
             {/* Pagination */}
-            <section className="pt-8 px-10 pb-6 flex justify-between items-center bg-white border-t border-[#DDDDDD] text-[12px] leading-[14px] shadow-default rounded-b-md">
-                <div>
-                    <span>Show </span>
-                    <select name="entries" id="entries" className="form-element !p-1">
-                        <option value="10">10</option>
-                        <option value="9">9</option>
-                        <option value="8">8</option>
-                        <option value="7">7</option>
-                        <option value="6">6</option>
-                    </select>
-                    <span> entries</span>
-                </div>
-
-
-                <form className="flex items-center gap-x-2.5">
-                    <img src={chevron} alt="Left" width={20} height={20} className="rotate-180" />
-
-                    <div>
-                        <input type="text" defaultValue="1" className="!p-1 w-10 form-element" />
-                        <span> of 80</span>
-                    </div>
-
-                    <img src={chevron} alt="Right" width={20} height={20} />
-                </form>
-            </section>
+            <Pagination />
         </>
     );
 };

@@ -280,8 +280,12 @@ nav {
   @apply h-14 content-center;
 }
 
-.table-striped tbody tr td .table-col-tag {
+.table-striped tbody tr td .table-tag {
   @apply font-medium px-2 h-8 content-center rounded-md inline-block;
+}
+
+.table-striped tbody tr td .table-action-btn {
+  @apply font-medium px-2 h-9 content-center bg-[#FFEC3D] rounded-md inline-block;
 }
 
 

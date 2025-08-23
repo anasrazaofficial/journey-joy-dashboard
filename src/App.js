@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import { Dashboard, PassengerManagment } from "./Pages";
+import { Dashboard, PassengerManagment, RegionManagement } from "./Pages";
 import { Navbar, Sidebar } from "./components";
 
 
@@ -16,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/passenger-managment" element={<PassengerManagment />} />
+            <Route path="/region-management" element={<RegionManagement />} />
           </Routes>
         </Router>
       </main>
