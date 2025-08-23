@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --shadow: 0 3px 6px 0 #00000029;
+}
 
 * {
   margin: 0;
@@ -211,4 +214,84 @@ nav {
 
 .dashboard .stat-cards .chart-header .btn-chart-inactive {
   background: #F5F5F5;
+}
+
+
+
+
+
+
+
+
+
+/* Components */
+.form-element {
+  @apply p-4 border border-[#909090] rounded-lg;
+}
+
+.input-search-container input {
+  @apply relative pr-14;
+}
+
+.input-search-container img {
+  @apply absolute top-1/2 -translate-y-1/2 right-4 size-6;
+}
+
+.btn-yellow {
+  @apply pt-4 pb-2.5 px-4 bg-[#FFEC3D] text-lg rounded-md;
+}
+
+
+
+
+
+
+
+
+/* Table Striped */
+.table-striped thead tr th {
+  @apply font-bold text-sm text-left pb-5;
+}
+
+.table-striped thead tr th:first-child,
+.table-striped tbody tr td:first-child {
+  @apply pl-10;
+}
+
+.table-striped thead tr th:last-child,
+.table-striped tbody tr td:last-child {
+  @apply pr-10;
+}
+
+.table-striped tbody {
+  @apply divide-y divide-[#DDDDDD];
+  box-shadow: var(--shadow);
+}
+
+.table-striped tbody tr:nth-child(even) {
+  @apply bg-[#F9FAFB];
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  @apply bg-[white];
+}
+
+.table-striped tbody tr td {
+  @apply h-14 content-center;
+}
+
+.table-striped tbody tr td .table-col-tag {
+  @apply font-medium px-2 h-8 content-center rounded-md inline-block;
+}
+
+
+
+
+
+
+
+
+/* Custom classes */
+.shadow-default {
+  box-shadow: var(--shadow);
 }
