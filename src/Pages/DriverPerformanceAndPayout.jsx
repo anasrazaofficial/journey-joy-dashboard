@@ -1,5 +1,5 @@
-import { avatarTable, check, dashboardChart, totalCompanyProfit, totalRevenue } from "../assets";
-import { Pagination, SidebarDashboard, SidebarPassengerMan, Switch } from "../components";
+import { avatarTable, totalCompanyProfit, totalRevenue } from "../assets";
+import { Pagination, SidebarPassengerMan } from "../components";
 
 
 export const DriverPerformancePayout = () => {

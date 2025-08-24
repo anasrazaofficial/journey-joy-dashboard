@@ -7,13 +7,13 @@ export const Switch = () => {
         <button
             type="button"
             onClick={() => setEnabled(!enabled)}
-            className={`relative inline-flex items-center rounded-full transition-colors duration-300 
+            className={`relative inline-flex items-center rounded-full transition-colors duration-100 
         ${enabled ? "bg-[#29A869]" : "bg-[#868686]"} 
         w-[26px] h-[14px]`}
         >
             {/* Ball */}
             <span
-                className={`absolute left-px top-px size-3 rounded-full bg-white shadow-md transform transition-transform duration-300
+                className={`absolute left-0.5 top-0.5 size-2.5 rounded-full bg-white shadow-md transform transition-transform duration-100
           ${enabled ? "translate-x-[12px]" : "translate-x-0"}`}
             />
         </button>
