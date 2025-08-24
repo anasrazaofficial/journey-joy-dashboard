@@ -12,7 +12,7 @@ export const DriverPerformancePayout = () => {
 
       <section className="mt-5 grid grid-cols-4 gap-x-5">
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div className="space-y-2 grow">
             <span className="stat-card-title">Total Revenue</span>
             <p className="text-[32px] font-bold leading-[48px]">55,000 SAR</p>
@@ -24,19 +24,19 @@ export const DriverPerformancePayout = () => {
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div className="space-y-2 grow">
             <span className="stat-card-title">Total Driver Payout</span>
             <p className="text-[32px] font-bold leading-[48px]">55,000 SAR</p>
           </div>
 
           <div className="stat-card-icon">
-            <SidebarPassengerMan className="fill-black" />
+            <SidebarPassengerMan className="w-[33px] h-[29px]" />
           </div>
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div className="space-y-2 grow">
             <span className="stat-card-title">Total Company Profile</span>
             <p className="text-[32px] font-bold leading-[48px]">55,000 SAR</p>
@@ -48,14 +48,14 @@ export const DriverPerformancePayout = () => {
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div className="space-y-2 grow">
             <span className="stat-card-title">Total Active Subscription</span>
             <p className="text-[32px] font-bold leading-[48px]">500</p>
           </div>
 
           <div className="stat-card-icon">
-            <SidebarPassengerMan className="fill-black" />
+            <SidebarPassengerMan className="w-[33px] h-[29px]" />
           </div>
         </div>
 

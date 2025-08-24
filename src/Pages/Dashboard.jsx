@@ -1,77 +1,77 @@
-import { avatarTable, check, dashboardChart } from "../assets";
-import { SidebarDashboard, Switch } from "../components";
+import { avatarTable, check, dashboardChart, dashboardStatCardRevenue, dashboardStatCardSubscription } from "../assets";
+import { SidebarDashboard, SidebarPassengerMan, Switch } from "../components";
 
 export const Dashboard = () => {
   return (
     <section className="dashboard">
-      <div>
+      <section>
         <h2>Dashboard</h2>
         <p>Welcome back! Here's what's happening with Journey Joy today. </p>
-      </div>
+      </section>
 
 
 
 
-      <div className="stat-cards gap-x-5 gap-y-6">
+      <div className="mt-[22px] grid grid-cols-4 gap-x-5 gap-y-6">
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
             <span className="stat-card-title">Total Drivers</span>
             <p className="stat-card-value">150</p>
-            <span className="stat-card-percentage"><span style={{ color: "#11B870" }}>+12%</span> from last month</span>
+            <span className="text-lg font-medium mt-3"><span style={{ color: "#11B870" }}>+12%</span> from last month</span>
           </div>
 
           <div className="stat-card-icon">
-            <SidebarDashboard className="fill-black" />
+            <SidebarDashboard className="w-10 h-[29px]" />
           </div>
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
             <span className="stat-card-title">Active Subscription</span>
             <p className="stat-card-value">1,247</p>
-            <span className="stat-card-percentage"><span style={{ color: "#11B870" }}>+12%</span> from last month</span>
+            <span className="text-lg font-medium mt-3"><span style={{ color: "#11B870" }}>+12%</span> from last month</span>
           </div>
 
           <div className="stat-card-icon">
-            <SidebarDashboard className="fill-black" />
+            <img src={dashboardStatCardSubscription} alt="Subscription" height={30} width={42} />
           </div>
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
             <span className="stat-card-title">Total Customers</span>
             <p className="stat-card-value">3,892</p>
-            <span className="stat-card-percentage"><span style={{ color: "#11B870" }}>+12%</span> from last month</span>
+            <span className="text-lg font-medium mt-3"><span style={{ color: "#11B870" }}>+12%</span> from last month</span>
           </div>
 
           <div className="stat-card-icon">
-            <SidebarDashboard className="fill-black" />
+            <SidebarPassengerMan className="w-[33px] h-[29px]" />
           </div>
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
             <span className="stat-card-title">Total Revenue</span>
             <p className="stat-card-value">3,892</p>
-            <span className="stat-card-percentage"><span style={{ color: "#11B870" }}>+12%</span> from last month</span>
+            <span className="text-lg font-medium mt-3"><span style={{ color: "#11B870" }}>+12%</span> from last month</span>
           </div>
 
           <div className="stat-card-icon">
-            <SidebarDashboard className="fill-black" />
+            <img src={dashboardStatCardRevenue} alt="Revenue" height={29} width={32} />
           </div>
         </div>
 
 
-        <div className="stat-card-chart bg-white">
-          <div className="chart-header">
+        <div className="card-layout col-span-2">
+          <div className="flex justify-between items-center">
             <h4>Earning</h4>
-            <div>
-              <button className="btn-chart-active" style={{ marginRight: "8px" }}>Monthly</button>
-              <button className="btn-chart-inactive">Weekly</button>
+            <div className="space-x-2">
+              <button className="btn-chart bg-[#2C2C2C] text-[#FFEC3D]">Monthly</button>
+              <button className="btn-chart bg-[#F5F5F5]">Weekly</button>
             </div>
           </div>
 
