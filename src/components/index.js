@@ -1,3 +1,4 @@
+export { Chart } from "./Chart";
 export { Navbar } from "./Navbar";
 export { Pagination } from "./Pagination";
 export { Sidebar } from "./Sidebar";

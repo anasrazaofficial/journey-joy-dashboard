@@ -1,5 +1,5 @@
-import { avatarTable, check, dashboardChart, dashboardStatCardRevenue, dashboardStatCardSubscription } from "../assets";
-import { SidebarDashboard, SidebarPassengerMan, Switch } from "../components";
+import { avatarTable, check, dashboardStatCardRevenue, dashboardStatCardSubscription } from "../assets";
+import { Chart, SidebarDashboard, SidebarPassengerMan, Switch } from "../components";
 
 export const Dashboard = () => {
   return (
@@ -75,7 +75,9 @@ export const Dashboard = () => {
             </div>
           </div>
 
-          <img src={dashboardChart} alt="Dashboard" className="mt-5" width={630} />
+          <div className="w-full h-72">
+            <Chart />
+          </div>
         </div>
 
 
