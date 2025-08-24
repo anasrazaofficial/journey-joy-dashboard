@@ -136,16 +136,16 @@ nav {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.dashboard .stat-cards .stat-card {
+.stat-card {
   padding: 33px 24px 28px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  box-shadow: 0 3px 6px 0 #00000029;
+  box-shadow: var(--shadow);
   border-radius: 8px;
 }
 
-.dashboard .stat-cards .stat-card .stat-card-title {
+.stat-card-title {
   font-size: 18px;
   line-height: 100%;
   color: #B1B1B1;
@@ -164,7 +164,7 @@ nav {
   font-weight: 500;
 }
 
-.dashboard .stat-cards .stat-card .stat-card-icon {
+.stat-card-icon {
   width: 64px;
   height: 64px;
   background: #FFEC3D;
@@ -172,8 +172,6 @@ nav {
   flex-shrink: 0;
   display: grid;
   place-items: center;
-  padding-inline: 12px;
-  padding-block: 17px;
 }
 
 .dashboard .stat-cards .stat-card .stat-card-icon img,

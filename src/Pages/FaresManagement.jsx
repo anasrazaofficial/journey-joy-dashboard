@@ -143,10 +143,6 @@ export const FaresManagement = () => {
             </div>
 
 
-
-
-
-
             {/* Pagination */}
             <Pagination />
         </>
