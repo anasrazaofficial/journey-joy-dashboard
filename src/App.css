@@ -64,25 +64,35 @@ nav {
 
 
 /* Dashboard */
-.stat-card {
-  @apply pt-[33px] px-6 pb-7 bg-white flex justify-between gap-x-2.5 rounded-lg;
-  box-shadow: var(--shadow);
+.dashboard .stat-cards {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.stat-card .stat-card-title {
+.stat-card {
+  padding: 33px 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+
+.stat-card-title {
   font-size: 18px;
   line-height: 100%;
   color: #B1B1B1;
 }
 
-.stat-card .stat-card-value {
+.dashboard .stat-cards .stat-card .stat-card-value {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
   margin-bottom: 11px;
 }
 
-.stat-card .stat-card-percentage {
+.dashboard .stat-cards .stat-card .stat-card-percentage {
   font-size: 18px;
   line-height: 100%;
   font-weight: 500;
@@ -98,27 +108,27 @@ nav {
   place-items: center;
 }
 
-.stat-card .stat-card-icon img,
-.stat-card .stat-card-icon svg {
+.dashboard .stat-cards .stat-card .stat-card-icon img,
+.dashboard .stat-cards .stat-card .stat-card-icon svg {
   fill: black;
   width: 100%;
   height: 100%;
 }
 
-.stat-card-chart {
+.dashboard .stat-cards .stat-card-chart {
   padding: 33px 24px 28px;
   grid-column: span 2 / span 2;
   box-shadow: 0 3px 6px 0 #00000029;
   border-radius: 8px;
 }
 
-.chart-header {
+.dashboard .stat-cards .chart-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.chart-header button {
+.dashboard .stat-cards .chart-header button {
   padding: 8px 16px;
   border: none;
   font-weight: 700;
@@ -129,12 +139,12 @@ nav {
   text-align: center;
 }
 
-.chart-header .btn-chart-active {
+.dashboard .stat-cards .chart-header .btn-chart-active {
   background: #2C2C2C;
   color: #FFEC3D;
 }
 
-.chart-header .btn-chart-inactive {
+.dashboard .stat-cards .chart-header .btn-chart-inactive {
   background: #F5F5F5;
 }
 
