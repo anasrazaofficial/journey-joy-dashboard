@@ -4,17 +4,17 @@ import { SidebarDashboard, Switch } from "../components";
 export const Dashboard = () => {
   return (
     <section className="dashboard">
-      <div>
+      <section>
         <h2>Dashboard</h2>
         <p>Welcome back! Here's what's happening with Journey Joy today. </p>
-      </div>
+      </section>
 
 
 
 
-      <div className="stat-cards gap-x-5 gap-y-6">
+      <div className="mt-[22px] grid grid-cols-4 gap-x-5 gap-y-6">
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
             <span className="stat-card-title">Total Drivers</span>
             <p className="stat-card-value">150</p>
@@ -27,7 +27,7 @@ export const Dashboard = () => {
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
             <span className="stat-card-title">Active Subscription</span>
             <p className="stat-card-value">1,247</p>
@@ -40,7 +40,7 @@ export const Dashboard = () => {
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
             <span className="stat-card-title">Total Customers</span>
             <p className="stat-card-value">3,892</p>
@@ -53,7 +53,7 @@ export const Dashboard = () => {
         </div>
 
 
-        <div className="stat-card bg-white">
+        <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
             <span className="stat-card-title">Total Revenue</span>
             <p className="stat-card-value">3,892</p>
