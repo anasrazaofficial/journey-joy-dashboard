@@ -288,6 +288,10 @@ nav {
   @apply font-medium px-2 h-9 content-center bg-[#FFEC3D] rounded-md inline-block;
 }
 
+.table-striped tbody tr td .table-chip {
+  @apply font-medium px-2 h-9 content-center text-[#11B870] bg-[#11B8701A] border border-[#11B870] rounded-md inline-block;
+}
+
 
 
 

@@ -1,5 +1,5 @@
 import { Pagination } from "../components";
-import { avatarTable, search } from "../assets";
+import { search } from "../assets";
 
 
 export const RegionManagement = () => {
