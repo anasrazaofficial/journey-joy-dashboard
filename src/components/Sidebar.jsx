@@ -1,54 +1,103 @@
+import { NavLink } from "react-router-dom";
 import { logo, logout } from "../assets";
 import { SidebarCollege, SidebarDashboard, SidebarPassengerMan, SidebarRegion, SidebarSubscription } from "../components";
 
 
 export const Sidebar = () => {
     return (
-        <aside className="sidebar">
-            <img src={logo} alt="Logo" height={83} width={130} className="sidebar-logo" />
+        <aside className="w-64 h-dvh bg-[#2C2C2C] fixed top-0 left-0 py-8 overflow-y-auto">
+            <img src={logo} alt="Logo" height={83} width={130} className="mx-auto block" />
 
 
-            <ul>
+
+
+
+
+
+            <ul className="nav-links mt-[59px] text-lg text-white/75">
                 <li>
-                    <SidebarDashboard className="sidebar-icons" />
-                    <span>Dashboard</span>
+                    <NavLink to="/"
+                        className={({ isActive }) => `group ${isActive ? "bg-[#444444] text-white" : ""}`}
+                    >
+                        <SidebarDashboard />
+                        <span>Dashboard</span>
+                    </NavLink>
                 </li>
+
                 <li>
-                    <SidebarPassengerMan className="sidebar-icons" />
-                    <span>Passenger Management</span>
+                    <NavLink to="/passenger-managment"
+                        className={({ isActive }) => `group ${isActive ? "bg-[#444444] text-white" : ""}`}
+                    >
+                        <SidebarPassengerMan />
+                        <span>Passenger Management</span>
+                    </NavLink>
                 </li>
+
                 <li>
-                    <SidebarRegion className="sidebar-icons" />
-                    <span>Region Management</span>
+                    <NavLink to="/region-management"
+                        className={({ isActive }) => `group ${isActive ? "bg-[#444444] text-white" : ""}`}
+                    >
+                        <SidebarRegion />
+                        <span>Region Management</span>
+                    </NavLink>
                 </li>
+
                 <li>
-                    <SidebarCollege className="sidebar-icons" />
-                    <span>Colleges & Universities</span>
+                    <NavLink to="/colleges-and-universities"
+                        className={({ isActive }) => `group ${isActive ? "bg-[#444444] text-white" : ""}`}
+                    >
+                        <SidebarCollege />
+                        <span>Colleges & Universities</span>
+                    </NavLink>
                 </li>
+
                 <li>
-                    <SidebarSubscription className="sidebar-icons" />
-                    <span>Subscription Management</span>
+                    <NavLink to="/subscription-management"
+                        className={({ isActive }) => `group ${isActive ? "bg-[#444444] text-white" : ""}`}
+                    >
+                        <SidebarSubscription />
+                        <span>Subscription Management</span>
+                    </NavLink>
                 </li>
+
                 <li>
-                    <SidebarDashboard className="sidebar-icons" />
-                    <span>Fares Management</span>
+                    <NavLink to="/fares-management"
+                        className={({ isActive }) => `group ${isActive ? "bg-[#444444] text-white" : ""}`}
+                    >
+                        <SidebarDashboard />
+                        <span>Fares Management</span>
+                    </NavLink>
                 </li>
+
                 <li>
-                    <SidebarPassengerMan className="sidebar-icons" />
-                    <span>Driver Management</span>
+                    <NavLink to="/driver-management"
+                        className={({ isActive }) => `group ${isActive ? "bg-[#444444] text-white" : ""}`}
+                    >
+                        <SidebarPassengerMan />
+                        <span>Driver Management</span>
+                    </NavLink>
                 </li>
+
                 <li>
-                    <SidebarPassengerMan className="sidebar-icons" />
-                    <span>Driver Performance & Payout</span>
+                    <NavLink to="/driver-performance-payout"
+                        className={({ isActive }) => `group ${isActive ? "bg-[#444444] text-white" : ""}`}
+                    >
+                        <SidebarPassengerMan />
+                        <span>Driver Performance & Payout</span>
+                    </NavLink>
                 </li>
             </ul>
 
 
 
-            <div className="sidebar-logout">
+
+
+
+
+            <button type="button" className="ml-6 flex items-center gap-x-4 mt-10 cursor-pointer text-white">
                 <img src={logout} alt="Logout" />
                 <span>Logout</span>
-            </div>
+            </button>
         </aside>
     );
 };

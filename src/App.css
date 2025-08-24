@@ -44,57 +44,16 @@ h4 {
 
 
 /* Sidebar */
-.sidebar {
-  width: 256px;
-  height: 100dvh;
-  background: #2C2C2C;
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-block: 32px;
-  overflow-y: auto;
+.nav-links li a {
+  @apply pt-4 pr-7 pb-3 pl-10 flex items-start gap-x-4 hover:bg-[#444444] hover:text-white cursor-pointer;
 }
 
-.sidebar .sidebar-logo {
-  margin-inline: auto;
-  display: block;
+.nav-links li a svg {
+  @apply fill-[#CACACA] flex-shrink-0 w-8 h-6;
 }
 
-.sidebar ul {
-  margin-top: 59px;
-  list-style-type: none;
-  padding: 0;
-  font-size: 18px;
-}
-
-.sidebar ul li {
-  padding: 17px 28px 13px 40px;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.sidebar ul li:hover {
-  background: #444444;
-  cursor: pointer;
-}
-
-.sidebar ul li .sidebar-icons {
-  fill: #CACACA;
-}
-
-.sidebar ul li:hover>.sidebar-icons {
-  fill: #FFEC3D;
-}
-
-.sidebar .sidebar-logout {
-  padding-left: 24px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 40px;
-  cursor: pointer;
+.nav-links li a:hover>svg {
+  @apply fill-[#FFEC3D];
 }
 
 
