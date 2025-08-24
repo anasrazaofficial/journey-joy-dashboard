@@ -75,13 +75,13 @@ export const Dashboard = () => {
             </div>
           </div>
 
-          <div className="w-full h-72">
+          <div className="w-full h-[274px] mt-5">
             <Chart />
           </div>
         </div>
 
 
-        <div className="pt-[33px] px-6 pb-[28px] col-span-2 shadow-[0_3px_6px_#00000029] rounded-lg bg-white">
+        <div className="card-layout col-span-2">
           <h4>Approval Request</h4>
           <table className="mt-8 w-full border-separate border-spacing-y-2">
             <thead>
@@ -94,7 +94,7 @@ export const Dashboard = () => {
             </thead>
 
             <tbody>
-              <tr className="*:h-[62px] *:text-[13px] bg-[#F5F5F5] rounded-sm shadow-[0_3px_6px_#0000001a]">
+              <tr className="*:h-[62px] *:text-[13px] bg-[#F5F5F5] rounded-sm shadow-default">
                 <td className="flex gap-x-4 items-center pl-4">
                   <img src={avatarTable} alt="Avatar-1" height={25} width={25} className="shrink-0" />
                   <span className="text-[#FDC300]">AL Mohsin</span>
@@ -104,7 +104,7 @@ export const Dashboard = () => {
                 <td className="text-[#454545]">1 h ago</td>
               </tr>
 
-              <tr className="*:h-[62px] *:text-[13px] bg-[#F5F5F5] rounded-sm shadow-[0_3px_6px_#0000001a]">
+              <tr className="*:h-[62px] *:text-[13px] bg-[#F5F5F5] rounded-sm shadow-default">
                 <td className="flex gap-x-4 items-center pl-4">
                   <img src={avatarTable} alt="Avatar-2" height={25} width={25} className="shrink-0" />
                   <span className="text-[#FDC300]">Alara Emir</span>
@@ -114,7 +114,7 @@ export const Dashboard = () => {
                 <td className="text-[#454545]">1 h ago</td>
               </tr>
 
-              <tr className="*:h-[62px] *:text-[13px] bg-[#F5F5F5] rounded-sm shadow-[0_3px_6px_#0000001a]">
+              <tr className="*:h-[62px] *:text-[13px] bg-[#F5F5F5] rounded-sm shadow-default">
                 <td className="flex gap-x-4 items-center pl-4">
                   <img src={avatarTable} alt="Avatar-3" height={25} width={25} className="shrink-0" />
                   <span className="text-[#FDC300]">AL Altan</span>
@@ -132,7 +132,7 @@ export const Dashboard = () => {
 
 
 
-      <section className="pt-6 px-6 pb-10 space-y-5 mt-[22px] w-[496px] bg-white rounded-lg shadow-[0_3px_6px_0_#00000029] relative before:content-[''] before:absolute before:left-[39px] before:top-[70px] before:h-40 before:border before:border-dashed before:border-[#707070]">
+      <section className="pt-6 px-6 pb-10 space-y-5 mt-[22px] w-[496px] bg-white rounded-lg shadow-default relative before:content-[''] before:absolute before:left-[39px] before:top-[70px] before:h-40 before:border before:border-dashed before:border-[#707070]">
         <h3>Recent Activity</h3>
 
         <ul className="space-y-6">

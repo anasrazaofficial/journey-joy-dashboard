@@ -64,7 +64,7 @@ export const DriverPerformancePayout = () => {
 
 
 
-      <form className="pt-8 px-8 pb-7 mt-8 mb-11 bg-white flex justify-between items-end rounded-lg shadow-[0_3px_6px_0_#00000029]">
+      <form className="pt-8 px-8 pb-7 mt-8 mb-11 bg-white flex justify-between items-end rounded-lg shadow-default">
         <div className="flex gap-x-7">
           <div className="space-y-1 w-[300px]">
             <label htmlFor="month" className="text-[#464646]">Month</label>

@@ -64,7 +64,6 @@ nav {
 
 
 /* Components */
-
 .card-layout {
   @apply px-6 pt-[33px] pb-7 bg-white rounded-lg;
   box-shadow: var(--shadow);
