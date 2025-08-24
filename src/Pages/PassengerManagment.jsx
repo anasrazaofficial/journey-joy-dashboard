@@ -50,79 +50,81 @@ export const PassengerManagment = () => {
 
 
             {/* Table */}
-            <table className="mt-[73px] w-full table-striped">
-                <thead>
-                    <tr>
-                        <th>Passenger Name</th>
-                        <th>Email</th>
-                        <th>Phone Number</th>
-                        <th>Gender</th>
-                        <th>College/University</th>
-                        <th>Pickup Region</th>
-                        <th>Preferred Gender</th>
-                        <th>Registered ON</th>
-                    </tr>
-                </thead>
+            <section className="mt-[73px] w-full overflow-x-auto">
+                <table className="w-full table-striped min-w-max">
+                    <thead>
+                        <tr>
+                            <th className="min-w-56">Passenger Name</th>
+                            <th className="min-w-[300px]">Email</th>
+                            <th className="min-w-44">Phone Number</th>
+                            <th className="min-w-32">Gender</th>
+                            <th className="min-w-52">College/University</th>
+                            <th className="min-w-40">Pickup Region</th>
+                            <th className="min-w-52">Preferred Gender</th>
+                            <th className="min-w-40">Registered ON</th>
+                        </tr>
+                    </thead>
 
 
-                <tbody>
-                    <tr>
-                        <td className="flex items-center gap-x-2">
-                            <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
-                            <span className="text-[#FDC300]">Mohammed Ali</span>
-                        </td>
-                        <td>mohammed.a@example.com</td>
-                        <td>0501112233</td>
-                        <td><span className="table-tag bg-[#E0E7FF]">MALE</span></td>
-                        <td>King Fahd Uni</td>
-                        <td>Riyadh</td>
-                        <td><span className="table-tag bg-[#F0F0F0]">ANY</span></td>
-                        <td>7/12/2025</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td className="flex items-center gap-x-2">
+                                <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
+                                <span className="text-[#FDC300]">Mohammed Ali</span>
+                            </td>
+                            <td>mohammed.a@example.com</td>
+                            <td>0501112233</td>
+                            <td><span className="table-tag bg-[#E0E7FF]">MALE</span></td>
+                            <td>King Fahd Uni</td>
+                            <td>Riyadh</td>
+                            <td><span className="table-tag bg-[#F0F0F0]">ANY</span></td>
+                            <td>7/12/2025</td>
+                        </tr>
 
-                    <tr>
-                        <td className="flex items-center gap-x-2">
-                            <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
-                            <span className="text-[#FDC300]">Mohammed Ali</span>
-                        </td>
-                        <td>mohammed.a@example.com</td>
-                        <td>0501112233</td>
-                        <td><span className="table-col-tag bg-[#E0E7FF]">MALE</span></td>
-                        <td>King Fahd Uni</td>
-                        <td>Riyadh</td>
-                        <td><span className="table-col-tag bg-[#F0F0F0]">ANY</span></td>
-                        <td>7/12/2025</td>
-                    </tr>
+                        <tr>
+                            <td className="flex items-center gap-x-2">
+                                <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
+                                <span className="text-[#FDC300]">Mohammed Ali</span>
+                            </td>
+                            <td>mohammed.a@example.com</td>
+                            <td>0501112233</td>
+                            <td><span className="table-tag bg-[#E0E7FF]">MALE</span></td>
+                            <td>King Fahd Uni</td>
+                            <td>Riyadh</td>
+                            <td><span className="table-tag bg-[#F0F0F0]">ANY</span></td>
+                            <td>7/12/2025</td>
+                        </tr>
 
-                    <tr>
-                        <td className="flex items-center gap-x-2">
-                            <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
-                            <span className="text-[#FDC300]">Mohammed Ali</span>
-                        </td>
-                        <td>mohammed.a@example.com</td>
-                        <td>0501112233</td>
-                        <td><span className="table-col-tag bg-[#E0E7FF]">MALE</span></td>
-                        <td>King Fahd Uni</td>
-                        <td>Riyadh</td>
-                        <td><span className="table-col-tag bg-[#F0F0F0]">ANY</span></td>
-                        <td>7/12/2025</td>
-                    </tr>
+                        <tr>
+                            <td className="flex items-center gap-x-2">
+                                <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
+                                <span className="text-[#FDC300]">Mohammed Ali</span>
+                            </td>
+                            <td>mohammed.a@example.com</td>
+                            <td>0501112233</td>
+                            <td><span className="table-tag bg-[#E0E7FF]">MALE</span></td>
+                            <td>King Fahd Uni</td>
+                            <td>Riyadh</td>
+                            <td><span className="table-tag bg-[#F0F0F0]">ANY</span></td>
+                            <td>7/12/2025</td>
+                        </tr>
 
-                    <tr>
-                        <td className="flex items-center gap-x-2">
-                            <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
-                            <span className="text-[#FDC300]">Mohammed Ali</span>
-                        </td>
-                        <td>mohammed.a@example.com</td>
-                        <td>0501112233</td>
-                        <td><span className="table-col-tag bg-[#E0E7FF]">MALE</span></td>
-                        <td>King Fahd Uni</td>
-                        <td>Riyadh</td>
-                        <td><span className="table-col-tag bg-[#F0F0F0]">ANY</span></td>
-                        <td>7/12/2025</td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                            <td className="flex items-center gap-x-2">
+                                <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
+                                <span className="text-[#FDC300]">Mohammed Ali</span>
+                            </td>
+                            <td>mohammed.a@example.com</td>
+                            <td>0501112233</td>
+                            <td><span className="table-tag bg-[#E0E7FF]">MALE</span></td>
+                            <td>King Fahd Uni</td>
+                            <td>Riyadh</td>
+                            <td><span className="table-tag bg-[#F0F0F0]">ANY</span></td>
+                            <td>7/12/2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
 
 

@@ -37,17 +37,17 @@ export const DriverManagment = () => {
                 <table className="w-full table-striped min-w-max">
                     <thead>
                         <tr>
-                            <th className="w-[242px]">Driver Name</th>
-                            <th className="w-[228px]">Email</th>
-                            <th className="w-[145px]">Phone</th>
-                            <th className="w-[131px]">Pickup Region</th>
-                            <th className="w-[142px]">Drop off Region</th>
-                            <th className="w-[122px]">Gender</th>
-                            <th className="w-36">Gender Pref</th>
-                            <th className="w-[118px]">Iqama Expiry</th>
-                            <th className="w-[136px]">License Expiry</th>
-                            <th className="w-[140px]">Vehicle Make</th>
-                            <th className="w-36">Vehicle Plate</th>
+                            <th className="min-w-[242px]">Driver Name</th>
+                            <th className="min-w-[228px]">Email</th>
+                            <th className="min-w-[145px]">Phone</th>
+                            <th className="min-w-[131px]">Pickup Region</th>
+                            <th className="min-w-[142px]">Drop off Region</th>
+                            <th className="min-w-[122px]">Gender</th>
+                            <th className="min-w-36">Gender Pref</th>
+                            <th className="min-w-[118px]">Iqama Expiry</th>
+                            <th className="min-w-[136px]">License Expiry</th>
+                            <th className="min-w-[140px]">Vehicle Make</th>
+                            <th className="min-w-36">Vehicle Plate</th>
                         </tr>
                     </thead>
 

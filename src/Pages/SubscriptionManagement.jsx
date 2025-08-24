@@ -37,91 +37,93 @@ export const SubscriptionManagement = () => {
 
 
             {/* Table */}
-            <table className="mt-[70px] w-full table-striped">
-                <thead>
-                    <tr>
-                        <th>Customer Name</th>
-                        <th>Subscription ID</th>
-                        <th>Plan Name</th>
-                        <th>Start Date</th>
-                        <th>End Date</th>
-                        <th>Status</th>
-                        <th>Payment Status</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
+            <section className="mt-[70px] w-full overflow-x-auto">
+                <table className="w-full table-striped min-w-max">
+                    <thead>
+                        <tr>
+                            <th className="min-w-[400px]">Customer Name</th>
+                            <th className="min-w-40">Subscription ID</th>
+                            <th className="min-w-36">Plan Name</th>
+                            <th className="min-w-36">Start Date</th>
+                            <th className="min-w-36">End Date</th>
+                            <th className="min-w-40">Status</th>
+                            <th className="min-w-40">Payment Status</th>
+                            <th className="min-w-56">Action</th>
+                        </tr>
+                    </thead>
 
 
-                <tbody>
-                    <tr>
-                        <td className="flex items-center gap-x-2">
-                            <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
-                            <span className="text-[#FDC300]">Mohammed Ali</span>
-                        </td>
-                        <td>SUB011</td>
-                        <td>Basic</td>
-                        <td>7/12/2025</td>
-                        <td>7/12/2025</td>
-                        <td> <span className="table-chip">Active</span> </td>
-                        <td className="font-medium text-[#11B870]">Paid</td>
-                        <td className="space-x-3">
-                            <button type="button" className="table-action-btn">View Detail</button>
-                            <button type="button" className="table-action-btn">Edit</button>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td className="flex items-center gap-x-2">
+                                <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
+                                <span className="text-[#FDC300]">Mohammed Ali</span>
+                            </td>
+                            <td>SUB011</td>
+                            <td>Basic</td>
+                            <td>7/12/2025</td>
+                            <td>7/12/2025</td>
+                            <td> <span className="table-chip">Active</span> </td>
+                            <td className="font-medium text-[#11B870]">Paid</td>
+                            <td className="space-x-3">
+                                <button type="button" className="table-action-btn">View Detail</button>
+                                <button type="button" className="table-action-btn">Edit</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td className="flex items-center gap-x-2">
-                            <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
-                            <span className="text-[#FDC300]">Mohammed Ali</span>
-                        </td>
-                        <td>SUB011</td>
-                        <td>Basic</td>
-                        <td>7/12/2025</td>
-                        <td>7/12/2025</td>
-                        <td> <span className="table-chip">Active</span> </td>
-                        <td className="font-medium text-[#11B870]">Paid</td>
-                        <td className="space-x-3">
-                            <button type="button" className="table-action-btn">View Detail</button>
-                            <button type="button" className="table-action-btn">Edit</button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td className="flex items-center gap-x-2">
+                                <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
+                                <span className="text-[#FDC300]">Mohammed Ali</span>
+                            </td>
+                            <td>SUB011</td>
+                            <td>Basic</td>
+                            <td>7/12/2025</td>
+                            <td>7/12/2025</td>
+                            <td> <span className="table-chip">Active</span> </td>
+                            <td className="font-medium text-[#11B870]">Paid</td>
+                            <td className="space-x-3">
+                                <button type="button" className="table-action-btn">View Detail</button>
+                                <button type="button" className="table-action-btn">Edit</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td className="flex items-center gap-x-2">
-                            <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
-                            <span className="text-[#FDC300]">Mohammed Ali</span>
-                        </td>
-                        <td>SUB011</td>
-                        <td>Basic</td>
-                        <td>7/12/2025</td>
-                        <td>7/12/2025</td>
-                        <td> <span className="table-chip">Active</span> </td>
-                        <td className="font-medium text-[#11B870]">Paid</td>
-                        <td className="space-x-3">
-                            <button type="button" className="table-action-btn">View Detail</button>
-                            <button type="button" className="table-action-btn">Edit</button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td className="flex items-center gap-x-2">
+                                <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
+                                <span className="text-[#FDC300]">Mohammed Ali</span>
+                            </td>
+                            <td>SUB011</td>
+                            <td>Basic</td>
+                            <td>7/12/2025</td>
+                            <td>7/12/2025</td>
+                            <td> <span className="table-chip">Active</span> </td>
+                            <td className="font-medium text-[#11B870]">Paid</td>
+                            <td className="space-x-3">
+                                <button type="button" className="table-action-btn">View Detail</button>
+                                <button type="button" className="table-action-btn">Edit</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td className="flex items-center gap-x-2">
-                            <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
-                            <span className="text-[#FDC300]">Mohammed Ali</span>
-                        </td>
-                        <td>SUB011</td>
-                        <td>Basic</td>
-                        <td>7/12/2025</td>
-                        <td>7/12/2025</td>
-                        <td> <span className="table-chip">Active</span> </td>
-                        <td className="font-medium text-[#11B870]">Paid</td>
-                        <td className="space-x-3">
-                            <button type="button" className="table-action-btn">View Detail</button>
-                            <button type="button" className="table-action-btn">Edit</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                            <td className="flex items-center gap-x-2">
+                                <img src={avatarTable} alt="Avatar" height={25} width={25} className="shrink-0" />
+                                <span className="text-[#FDC300]">Mohammed Ali</span>
+                            </td>
+                            <td>SUB011</td>
+                            <td>Basic</td>
+                            <td>7/12/2025</td>
+                            <td>7/12/2025</td>
+                            <td> <span className="table-chip">Active</span> </td>
+                            <td className="font-medium text-[#11B870]">Paid</td>
+                            <td className="space-x-3">
+                                <button type="button" className="table-action-btn">View Detail</button>
+                                <button type="button" className="table-action-btn">Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
 
 

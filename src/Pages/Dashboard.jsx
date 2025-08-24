@@ -3,7 +3,7 @@ import { SidebarDashboard, SidebarPassengerMan, Switch } from "../components";
 
 export const Dashboard = () => {
   return (
-    <section className="dashboard">
+    <>
       <section>
         <h2>Dashboard</h2>
         <p>Welcome back! Here's what's happening with Journey Joy today. </p>
@@ -12,7 +12,7 @@ export const Dashboard = () => {
 
 
 
-      <div className="mt-[22px] grid grid-cols-4 gap-x-5 gap-y-6">
+      <section className="mt-[22px] grid grid-cols-4 gap-x-5 gap-y-6">
 
         <div className="stat-card">
           <div style={{ flexGrow: 1 }}>
@@ -125,12 +125,12 @@ export const Dashboard = () => {
           </table>
         </div>
 
-      </div>
+      </section>
 
 
 
 
-      <div className="pt-6 px-6 pb-10 space-y-5 mt-[22px] w-[496px] bg-white rounded-lg shadow-[0_3px_6px_0_#00000029] relative before:content-[''] before:absolute before:left-[39px] before:top-[70px] before:h-40 before:border before:border-dashed before:border-[#707070]">
+      <section className="pt-6 px-6 pb-10 space-y-5 mt-[22px] w-[496px] bg-white rounded-lg shadow-[0_3px_6px_0_#00000029] relative before:content-[''] before:absolute before:left-[39px] before:top-[70px] before:h-40 before:border before:border-dashed before:border-[#707070]">
         <h3>Recent Activity</h3>
 
         <ul className="space-y-6">
@@ -163,7 +163,7 @@ export const Dashboard = () => {
             </div>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };

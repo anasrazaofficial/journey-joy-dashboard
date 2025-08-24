@@ -58,22 +58,22 @@ export const FaresManagement = () => {
 
 
             {/* Table */}
-            <div className="mt-[70px] w-full overflow-x-auto">
+            <section className="mt-[70px] w-full overflow-x-auto">
                 <table className="w-full table-striped min-w-max">
                     <thead>
                         <tr>
-                            <th className="w-40">Trip ID</th>
-                            <th className="w-[137px]">Pickup Region</th>
-                            <th className="w-[193px]">Drop off Region</th>
-                            <th className="w-[143px]">Price KM</th>
-                            <th className="w-[125px]">Base Fare</th>
-                            <th className="w-24">Price KM</th>
-                            <th className="w-[110px]">Price Min</th>
-                            <th className="w-[150px]">Waiting Charges</th>
-                            <th className="w-[132px]">Discount promo</th>
+                            <th className="min-w-40">Trip ID</th>
+                            <th className="min-w-[137px]">Pickup Region</th>
+                            <th className="min-w-[193px]">Drop off Region</th>
+                            <th className="min-w-[143px]">Price KM</th>
+                            <th className="min-w-[125px]">Base Fare</th>
+                            <th className="min-w-24">Price KM</th>
+                            <th className="min-w-[110px]">Price Min</th>
+                            <th className="min-w-[150px]">Waiting Charges</th>
+                            <th className="min-w-[132px]">Discount promo</th>
                             <th className="w-[108px]">Peak Hour Multiplier</th>
-                            <th className="w-[139px]">Final Fare</th>
-                            <th className="w-[167px]">Start Date & Time</th>
+                            <th className="min-w-[139px]">Final Fare</th>
+                            <th className="min-w-48">Start Date & Time</th>
                         </tr>
                     </thead>
 
@@ -140,7 +140,7 @@ export const FaresManagement = () => {
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </section>
 
 
             {/* Pagination */}
