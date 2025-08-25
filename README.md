@@ -40,5 +40,5 @@ To build, run:
 
 ```bash
 npm run build
-npm run start
+serve -s build
 ```
